@@ -15,3 +15,7 @@ Dependencies:
 * tkinter
 * matplotlib
 * numpy
+
+Use Cases:
+* Goalie Props
+* Goals totals (By team of goaltender)
