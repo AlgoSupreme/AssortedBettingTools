@@ -3,6 +3,7 @@ from tkinter import ttk
 import json
 import os
 import numpy as np
+from datetime import datetime
 from matplotlib.figure import Figure
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
 import scipy.stats as stats
@@ -12,11 +13,13 @@ import matplotlib.ticker as ticker
 # 1. THE DATA
 # ---------------------------------------------------------
 
-file_path = os.path.join("data_dump", "player_analysis2026-01-11.json")
+file_path = os.path.join("data_dump", f"player_analysis{datetime.now().date()}.json")
 
 # Fallback for local testing
 if not os.path.exists(file_path):
-    file_path = "player_analysis2026-01-11.json"
+    print("Missing today's data, please run `data_dump.bat` or `py data_dump_player.py`")
+    input()
+    quit()
 
 if os.path.exists(file_path):
     with open(file_path, "r") as f:
