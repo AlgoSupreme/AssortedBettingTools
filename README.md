@@ -1,5 +1,5 @@
 # AssortedBettingTools
-An assortment of the betting tools I made. Mostly AI generated code but fixed or optimized by me. 50% AI/ 50% hand programmed
+An assortment of the betting tools I made. Mostly AI generated code but fixed or optimized by me.
 
 ## 🥅 Goalie Performance Analyzer (v1.4)
 (found under goalie folder)
