@@ -3,6 +3,7 @@ An assortment of the betting tools I made. Mostly AI generated code but fixed or
 
 ## 🥅 Goalie Performance Analyzer (v1.4)
 (found under goalie folder)
+
 A Python-based desktop application designed for visualizing and analyzing NHL goaltender statistics. This tool processes JSON data to provide interactive trend analysis and statistical distribution modeling for Shots Against, Saves, and Goals Against.
 Key Features
 * Interactive GUI: Built with tkinter for easy goalie selection and view toggling.
