@@ -11,11 +11,18 @@ Key Features
 * Gaussian Distribution Analysis: Generates histograms and normal distribution curves ($\mu, \sigma$) for performance consistency analysis.
 * Reference Value Logic: Allows users to input a custom reference value (e.g., a betting line or median) to dynamically calculate the percentage of games falling Above or Below that threshold.
   
-Dependencies:
+### Dependencies:
 * tkinter
 * matplotlib
 * numpy
 
-Use Cases:
+### Use Cases:
 * Goalie Props
 * Goals totals (By team of goaltender)
+
+## Quickstart
+```
+run 'goalie_dump.bat' to generate the goalie data required for the program to run. [Takes a few minutes]
+
+run 'goalie_view.bat' to run the data viewer.
+```
