@@ -26,3 +26,31 @@ run 'goalie_dump.bat' to generate the goalie data required for the program to ru
 
 run 'goalie_view.bat' to run the data viewer.
 ```
+
+## 🏒 Player Performance Analyzer (v1.3)
+
+(found under player folder)
+
+A Python-based desktop application designed for visualizing and analyzing NHL player statistics on a game-by-game basis. This tool processes JSON data to provide interactive statistical distribution modeling for Points, Goals, Assists, and Shots.
+Key Features
+* Interactive GUI: Built with tkinter for seamless player selection and metric switching.
+* Game-by-Game Distribution: Generates histograms and normal distribution curves ($\mu, \sigma$) to visualize a player's consistency and frequency of performance per game.
+* Standard Deviation Analysis: Automatically plots and calculates $\pm 1\sigma$ and $\pm 2\sigma$ ranges to identify statistical outliers.
+* Probability Calculator: Includes a user input field to set a custom reference value (e.g., a betting line of "0.5 goals"), dynamically calculating the percentage likelihood of the player performing Above or Below that number based on their season history.
+
+## Dependencies:
+* tkinter
+* matplotlib
+* numpy
+* scipy
+
+## Use Cases:
+* Player Props (Shots on Goal, Points, Goal Scorer)
+* Fantasy Hockey
+* Consistency Analysis
+  
+## Quickstart
+```
+Run 'data_dump.bat'
+Run 'player_view.bat' to launch the analyzer.
+```
