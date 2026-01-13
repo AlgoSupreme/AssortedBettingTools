@@ -2,7 +2,7 @@
 An assortment of the betting tools I made. 
 
 ## 🥅 Goalie Performance Analyzer (v1.4)
-(found under goalie folder)
+(found under nhl_goalie folder)
 
 A Python-based desktop application designed for visualizing and analyzing NHL goaltender statistics. This tool processes JSON data to provide interactive trend analysis and statistical distribution modeling for Shots Against, Saves, and Goals Against.
 Key Features
@@ -29,7 +29,7 @@ run 'goalie_view.bat' to run the data viewer.
 
 ## 🏒 Player Performance Analyzer (v1.3)
 
-(found under player folder)
+(found under nhl_player folder)
 
 A Python-based desktop application designed for visualizing and analyzing NHL player statistics on a game-by-game basis. This tool processes JSON data to provide interactive statistical distribution modeling for Points, Goals, Assists, and Shots.
 Key Features
