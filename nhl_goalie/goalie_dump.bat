@@ -1,1 +1,1 @@
-py data_dump_goalie.py
+python data_dump_goalie.py

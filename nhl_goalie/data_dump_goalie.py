@@ -17,7 +17,12 @@ class data_dump():
         self.goalie_record = {}
 
         self.goalie_goalsAllowed = {}
-        self.season = "20252026"
+        if datetime.now().date().month < 6:
+            self.season = f"{int(datetime.now().date().year)-1}{int(datetime.now().date().year)}"
+            self.StartDate = str(datetime.now().date().year) + "-10-01"
+        else:
+            self.season = f"{int(datetime.now().date().year)}{int(datetime.now().date().year)+1}"
+            self.StartDate = str(datetime.now().date().year) + "-10-01"
 
         self.client = NHLClient(debug=True)
 
