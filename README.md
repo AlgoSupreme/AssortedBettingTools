@@ -20,7 +20,7 @@ Key Features
 * Goalie Props
 * Goals totals (By team of goaltender)
 
-## Quickstart
+### Quickstart
 ```
 run 'goalie_dump.bat' to generate the goalie data required for the program to run. [Takes a few minutes]
 
@@ -32,25 +32,67 @@ run 'goalie_view.bat' to run the data viewer.
 (found under nhl_player folder)
 
 A Python-based desktop application designed for visualizing and analyzing NHL player statistics on a game-by-game basis. This tool processes JSON data to provide interactive statistical distribution modeling for Points, Goals, Assists, and Shots.
-Key Features
+
+### Key Features
 * Interactive GUI: Built with tkinter for seamless player selection and metric switching.
 * Game-by-Game Distribution: Generates histograms and normal distribution curves ($\mu, \sigma$) to visualize a player's consistency and frequency of performance per game.
 * Standard Deviation Analysis: Automatically plots and calculates $\pm 1\sigma$ and $\pm 2\sigma$ ranges to identify statistical outliers.
 * Probability Calculator: Includes a user input field to set a custom reference value (e.g., a betting line of "0.5 goals"), dynamically calculating the percentage likelihood of the player performing Above or Below that number based on their season history.
 
-## Dependencies:
+### Dependencies:
 * tkinter
 * matplotlib
 * numpy
 * scipy
 
-## Use Cases:
+### Use Cases:
 * Player Props (Shots on Goal, Points, Goal Scorer)
 * Fantasy Hockey
 * Consistency Analysis
   
-## Quickstart
+### Quickstart
 ```
 Run 'data_dump.bat'
 Run 'player_view.bat' to launch the analyzer.
+```
+## 📊 Team Goal Probability Analyzer (v1.0)
+(found as goals_visualizer_tk.py)
+
+A Python-based desktop application designed for visualizing team scoring correlations between periods. This tool processes JSON data to generate probability heatmaps, helping users identify how scoring in early periods affects scoring in later periods.
+
+## Key Features
+
+* Interactive GUI: Built with tkinter for quick team selection and data loading.
+
+* Probability Heatmaps: Uses Seaborn to render color-coded matrices showing the percentage likelihood of goal outcomes.
+
+### Period Correlation Analysis:
+
+* P1 → P2: visualizes how goals scored in the 1st period influence 2nd period production.
+
+* Entering 3rd → P3: visualizes how the total game score (P1 + P2) influences 3rd period scoring.
+
+### Dependencies:
+* tkinter
+
+* pandas
+
+* seaborn
+
+* matplotlib
+
+### Use Cases:
+* Live Betting (3rd Period Totals)
+
+* Period-by-Period Analysis
+
+* Identifying Team "Clutch" or "Collapse" trends
+
+### Quickstart
+```
+Ensure a JSON data file (e.g., 'team_analysis_goalBreakdownYYYY-MM-DD.json') is in the directory.
+
+(Run the goals_dump.bat if file not available)
+
+Run 'python goals_visualizer_tk.py' or goals_visualizer.bat to launch the analyzer.
 ```
