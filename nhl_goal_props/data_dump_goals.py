@@ -18,10 +18,10 @@ class DataDumper():
         self.SaveDir = "data_dump_goals"
         if datetime.now().date().month < 6:
             self.season = f"{int(datetime.now().date().year)-1}{int(datetime.now().date().year)}"
-            self.StartDate = str(datetime.now().date().year) + "-10-01"
+            self.StartDate = str(datetime.now().date().year-1) + "-10-01"
         else:
             self.season = f"{int(datetime.now().date().year)}{int(datetime.now().date().year)+1}"
-            self.StartDate = str(datetime.now().date().year) + "-10-01"
+            self.StartDate = str(datetime.now().date().year-1) + "-10-01"
         self.EndDate = (datetime.now().date() - timedelta(days=1))
         self.Roster = {}
 
