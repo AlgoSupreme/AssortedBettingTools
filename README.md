@@ -56,7 +56,7 @@ Run 'data_dump.bat'
 Run 'player_view.bat' to launch the analyzer.
 ```
 ## 📊 Team Goal Probability Analyzer (v1.0)
-(found as goals_visualizer_tk.py)
+(found as nhl_goal_props folder)
 
 A Python-based desktop application designed for visualizing team scoring correlations between periods. This tool processes JSON data to generate probability heatmaps, helping users identify how scoring in early periods affects scoring in later periods.
 
